@@ -1,0 +1,138 @@
+
+* {
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+}
+.container {
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.image {
+  width: 200px;
+}
+
+.div-block {
+  max-width: 100%;
+  display: block;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.div-block-2 {
+  width: 100%;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.list {
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.list-item {
+  outline-offset: 0px;
+  border: 1px #000;
+  border-radius: 0;
+  outline: 3px solid #333;
+}
+
+.list-item-2 {
+  outline-offset: 0px;
+  outline: 3px #555;
+}
+
+.link {
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  display: flex;
+}
+
+.image-2 {
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.list-2 {
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+  font-size: 20px;
+}
+
+.list-item-2:hover .hover-text {
+  display: block;
+  color: #000;
+}
+
+@font-face {
+  font-family: 'Rankedsports Regular';
+  src: url('../fonts/RankedSports-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@media screen and (max-width: 767px) {
+  .list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hover-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+  }
+  .image-2 {
+    position: fixed;
+    top: 20%;
+    bottom: auto;
+    left: auto;
+    right: 35%;
+  }
+}
+
